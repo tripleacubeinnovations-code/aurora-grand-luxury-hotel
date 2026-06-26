@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences & Dining | Aurora Grand</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Aurora<span>Grand</span></a>
+            <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="experiences.html" class="active">Experiences</a>
+                <a href="#dining">Dining</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-primary" style="color:white;">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero (Video) -->
+    <section class="hero" style="height: 70vh;">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://cdn.pixabay.com/video/2019/02/10/21262-316263592_large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content animate-up">
+            <h1 class="hero-title" style="font-size: 3.5rem;">Unforgettable Experiences</h1>
+            <p style="letter-spacing: 2px; text-transform: uppercase;">Dining, Spa & Adventure</p>
+        </div>
+    </section>
+
+    <!-- Spa & Wellness -->
+    <section class="section-padding bg-warm">
+        <div class="container about">
+            <div class="about-text animate-left">
+                <span class="section-subtitle">Wellness</span>
+                <h2>The Aurora Spa</h2>
+                <p>Escape into a world of tranquility. Our award-winning spa offers bespoke treatments infused with local organic ingredients, thermal baths, and expert therapists to rejuvenate your mind, body, and soul.</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Book a Treatment</a>
+            </div>
+            <div class="about-image animate-right">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop" alt="Luxury Spa">
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining -->
+    <section id="dining" class="section-padding">
+        <div class="container">
+            <div class="section-header animate-up">
+                <span class="section-subtitle">Culinary Excellence</span>
+                <h2 class="section-title">Fine Dining & Bars</h2>
+            </div>
+            
+            <div class="about flex-reverse" style="margin-bottom: 80px; flex-direction: row-reverse;">
+                <div class="about-text animate-right">
+                    <h3>Le Jardin Signature Restaurant</h3>
+                    <p>Experience gastronomic brilliance at our Michelin-starred restaurant. Led by Chef Antoine Claire, Le Jardin offers an exquisite tasting menu paired with wines from our world-class cellar.</p>
+                    <a href="contact.html" class="btn btn-dark-outline" style="margin-top: 20px;">Reserve a Table</a>
+                </div>
+                <div class="about-image animate-left">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop" alt="Signature Restaurant">
+                </div>
+            </div>
+
+            <div class="about" style="margin-bottom: 80px;">
+                <div class="about-text animate-left">
+                    <h3>The Horizon Lounge & Bar</h3>
+                    <p>Sip on crafted cocktails while watching the sunset over the ocean. The Horizon Lounge features live jazz music, premium spirits, and an ambiance of sophisticated relaxation.</p>
+                </div>
+                <div class="about-image animate-right">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1974&auto=format&fit=crop" alt="Lounge Bar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Gallery -->
+    <section class="section-padding bg-dark">
+        <div class="container">
+            <div class="section-header animate-up">
+                <span class="section-subtitle">Adventure & Leisure</span>
+                <h2 class="section-title">Activities</h2>
+            </div>
+            <div class="exp-grid">
+                <div class="exp-card animate-up">
+                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1968&auto=format&fit=crop" alt="Golf">
+                    <div class="exp-overlay">
+                        <h3>Championship Golf</h3>
+                    </div>
+                </div>
+                <div class="exp-card animate-up" style="transition-delay: 0.1s">
+                    <img src="https://images.unsplash.com/photo-1543637005-4d639a4e16de?q=80&w=1967&auto=format&fit=crop" alt="Helicopter">
+                    <div class="exp-overlay">
+                        <h3>Scenic Helicopter Tours</h3>
+                    </div>
+                </div>
+                <div class="exp-card animate-up" style="transition-delay: 0.2s">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop" alt="Beach">
+                    <div class="exp-overlay">
+                        <h3>Private Beach Access</h3>
+                    </div>
+                </div>
+                <div class="exp-card animate-up" style="transition-delay: 0.3s">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop" alt="Wedding">
+                    <div class="exp-overlay">
+                        <h3>Luxury Weddings</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border-top:none;">
+                <p>&copy; 2026 Aurora Grand Luxury Hotel. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

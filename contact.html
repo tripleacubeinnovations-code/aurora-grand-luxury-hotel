@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking | Aurora Grand</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-warm">
+
+    <!-- Navigation -->
+    <header class="scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Aurora<span>Grand</span></a>
+            <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="experiences.html">Experiences</a>
+                <a href="experiences.html#dining">Dining</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="contact.html" class="btn btn-primary" style="color:white;">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <img src="https://images.unsplash.com/photo-1542314831-c53cd381615a?q=80&w=2070&auto=format&fit=crop" alt="Contact Hero">
+        <div class="hero-content animate-up">
+            <h1 class="hero-title" style="font-size: 3.5rem;">Reservations</h1>
+            <p style="letter-spacing: 2px; text-transform: uppercase;">We look forward to welcoming you</p>
+        </div>
+    </section>
+
+    <!-- Booking Form & Info -->
+    <section class="section-padding">
+        <div class="container">
+            
+            <div class="contact-info-grid animate-up">
+                <div class="info-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Location</h3>
+                    <p style="color: #666; margin-top: 10px;">123 Luxury Avenue<br>Paradise City, 90210</p>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p style="color: #666; margin-top: 10px;">+1 (800) 123-4567<br>+1 (800) 987-6543</p>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p style="color: #666; margin-top: 10px;">reservations@auroragrand.com<br>concierge@auroragrand.com</p>
+                </div>
+            </div>
+
+            <div class="about">
+                <div class="about-text glass-form animate-left" style="flex: 1;">
+                    <h2 style="margin-bottom: 30px;">Book Your Stay</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group" style="display: flex; gap: 20px;">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group" style="display: flex; gap: 20px;">
+                            <div style="flex: 1;">
+                                <label style="display:block; margin-bottom:5px; font-size:0.9rem;">Check-in</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div style="flex: 1;">
+                                <label style="display:block; margin-bottom:5px; font-size:0.9rem;">Check-out</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group" style="display: flex; gap: 20px;">
+                            <select class="form-control" style="flex: 1;" required>
+                                <option value="" disabled selected>Guests</option>
+                                <option value="1">1 Adult</option>
+                                <option value="2">2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                            </select>
+                            <select class="form-control" style="flex: 1;" required>
+                                <option value="" disabled selected>Room Type</option>
+                                <option value="deluxe">Deluxe Room</option>
+                                <option value="executive">Executive Suite</option>
+                                <option value="presidential">Presidential Suite</option>
+                                <option value="villa">Private Royal Villa</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" placeholder="Special Requests (Optional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border:none;">Request Reservation</button>
+                        <p style="text-align: center; font-size: 0.8rem; color: #777; margin-top: 15px;">* This is a reservation request. Our concierge will contact you to confirm availability and payment.</p>
+                    </form>
+                </div>
+                
+                <div class="about-image animate-right" style="flex: 1; height: 100%;">
+                    <!-- Google Maps Placeholder Image -->
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" alt="Location Map" style="height: 100%; object-fit: cover; border-radius: 15px;">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border-top:none;">
+                <p>&copy; 2026 Aurora Grand Luxury Hotel. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
