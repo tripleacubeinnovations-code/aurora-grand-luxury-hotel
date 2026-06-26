@@ -777,3 +777,43 @@ footer {
   color: var(--luxury-gold);
   margin-bottom: 20px;
 }
+
+/* Luxury Modal */
+.luxury-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.luxury-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.luxury-modal-content {
+  background: var(--white);
+  padding: 50px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.luxury-modal.active .luxury-modal-content {
+  transform: translateY(0) scale(1);
+}

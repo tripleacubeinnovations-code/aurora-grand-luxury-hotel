@@ -83,6 +83,41 @@ const forms = document.querySelectorAll('form');
 forms.forEach(form => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Thank you for your inquiry. A member of our concierge team will contact you shortly.');
+    
+    // Create luxury modal
+    const modal = document.createElement('div');
+    modal.className = 'luxury-modal';
+    
+    // Check if it's the newsletter or booking form based on inputs
+    const isNewsletter = form.querySelector('input[type="email"]') && !form.querySelector('input[type="date"]');
+    const title = isNewsletter ? 'Subscription Successful' : 'Reservation Request Sent';
+    const message = isNewsletter 
+      ? 'Thank you for subscribing to our newsletter. You will now receive exclusive offers and news.'
+      : 'Thank you for your inquiry. A member of our concierge team will contact you shortly to confirm the details of your stay.';
+    
+    modal.innerHTML = `
+      <div class="luxury-modal-content">
+        <i class="fa-solid fa-envelope-open-text text-gold" style="font-size: 3rem; margin-bottom: 20px;"></i>
+        <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 15px; color: var(--text-dark);">${title}</h3>
+        <p style="color: #666; margin-bottom: 30px; font-size: 1.05rem;">${message}</p>
+        <button class="btn btn-primary close-modal-btn">Close Window</button>
+      </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Trigger animation
+    setTimeout(() => {
+      modal.classList.add('active');
+    }, 10);
+    
+    // Close modal logic
+    modal.querySelector('.close-modal-btn').addEventListener('click', () => {
+      modal.classList.remove('active');
+      setTimeout(() => modal.remove(), 400);
+    });
+    
+    // Reset the form
+    form.reset();
   });
 });
